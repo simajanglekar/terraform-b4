@@ -6,3 +6,7 @@
 3. Bool = true, false 0, 1
 4. list = Ex. ["banana", "apple", "papaya"]
 5. Map/Dictionary = Ex. { city = "pune" , state="MH" , counrty= "india" }
+
+
+## terraform lifecycle ##
+init --> plan--> apply---> destory
