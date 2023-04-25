@@ -1,1 +1,2 @@
 ### Terraform ###
+sima notes
