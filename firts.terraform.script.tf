@@ -28,4 +28,5 @@ resource "aws_instance" "my-instance" {
       }
       variable "key_pair" {
         
+        
       }
