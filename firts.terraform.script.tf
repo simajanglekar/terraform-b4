@@ -14,4 +14,5 @@ resource "aws_instance" "my-instance" {
       
       variable "region" {
          description = "aws region" 
+         default = "ap-south-1"
       }
