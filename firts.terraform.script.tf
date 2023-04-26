@@ -3,7 +3,7 @@ provider "aws" {
 }
 resource "aws_instance" "my-instance" {
     ami = "ami-0763cf792771fe1bd"
-    instance_type = "t2.micro"
+    instance_type = var.instance_type
     key_name = "sima"
     tags = {
         env = "dev"
@@ -11,8 +11,12 @@ resource "aws_instance" "my-instance" {
     }
         vpc_security_group_ids = ["sg-0ef6349993a032265" , "sg-09de3c34c106ef45d"]
     }
-      
-      variable "region" {
+       variable "region" {
          description = "aws region" 
          default = "ap-south-1"
+      }
+
+      variable "instance_type" {
+        description = "instance type"
+        default = "t2.micro"
       }
