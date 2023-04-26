@@ -8,7 +8,7 @@ resource "aws_instance" "my-instance" {
     tags = var.tags
     vpc_security_group_ids = var.sg_ids
     }
-        vpc_security_group_ids = ["sg-0ef6349993a032265" , "sg-09de3c34c106ef45d"]
+        vpc_security_group_ids = ["]
     }
        variable "region" {
          description = "aws region" 
