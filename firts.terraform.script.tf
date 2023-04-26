@@ -22,7 +22,7 @@ resource "aws_instance" "my-instance" {
          default = "ap-south-1"
       }
       variable "ami_id" {
-        default = ""
+        default = "ami-0763cf792771fe1bd"
 }
 
      variable "instance_type" {
