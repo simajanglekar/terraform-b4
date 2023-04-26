@@ -10,7 +10,7 @@ resource "aws_instance" "my-instance" {
     }
     
        variable "region" {
-         description = "plese aws region" 
+         description = "please enter aws region" 
          default = "ap-south-1"
       }
 
