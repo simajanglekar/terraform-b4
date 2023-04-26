@@ -27,6 +27,6 @@ resource "aws_instance" "my-instance" {
         default = "t3.micro"
       }
       variable "key_pair" {
-
+      default = "aditya-london"
         
       }
