@@ -33,3 +33,17 @@ resource "aws_instance" "my-instance" {
       default = "sima"
         
       }
+      variable "tags" {
+    type = map
+    default = {
+        env = "dev"
+        Name = "my-instance"
+    }
+}
+
+variable "sg_ids" {
+    type = list
+    default = [
+        "sg-0c3d22be9da8ab07a"
+    ]
+}
