@@ -4,7 +4,7 @@ provider "aws" {
 resource "aws_instance" "my-instance" {
     ami = var.ami.id
     instance_type = var.instance_type
-    key_name = var.key.pair
+    key_name = var.key_pair
     tags = {
         env = "dev"
         Name = "instance-1"
