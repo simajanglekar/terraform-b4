@@ -26,4 +26,6 @@ resource "aws_instance" "my-instance" {
         description = "instance type"
         default = "t3.micro"
       }
-      vari
+      variable "key" {
+        
+      }
