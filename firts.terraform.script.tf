@@ -44,6 +44,6 @@ resource "aws_instance" "my-instance" {
 variable "sg_ids" {
     type = list
     default = [
-        ""
+        "sg-09de3c34c106ef45d"
     ]
 }
