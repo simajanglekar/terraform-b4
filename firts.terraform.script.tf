@@ -6,7 +6,7 @@ resource "aws_instance" "my-instance" {
     instance_type = var.instance_type
     key_name = var.key_pair
     tags = var.tags
-    
+    vpc_security_group_ids = var.sg
     }
         vpc_security_group_ids = ["sg-0ef6349993a032265" , "sg-09de3c34c106ef45d"]
     }
