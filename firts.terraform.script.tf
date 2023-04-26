@@ -1,6 +1,6 @@
 
 
-provider "aws" {
+rprovider "aws" {
     region = var.region
 }
 resource "aws_instance" "my-instance" {
