@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     bucket = "terraform-b4"
-    region = "value"
+    region = "ap-south-1"
     
   }
 }
