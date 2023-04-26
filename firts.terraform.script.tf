@@ -13,5 +13,5 @@ resource "aws_instance" "my-instance" {
     }
       
       variable "region" {
-         description = "aws region"
+         description = "aws region" 
       }
