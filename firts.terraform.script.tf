@@ -16,8 +16,7 @@ resource "aws_instance" "my-instance" {
     tags = var.tags
     vpc_security_group_ids = var.sg_ids
     }
-    
-       variable "region" {
+      variable "region" {
          description = "please enter aws region" 
          default = "ap-south-1"
       }
@@ -27,6 +26,6 @@ resource "aws_instance" "my-instance" {
         default = "t3.micro"
       }
       variable "key_pair" {
-        
+
         
       }
