@@ -1,6 +1,8 @@
+terraform {
+  
+}
 
-
-rprovider "aws" {
+provider "aws" {
     region = var.region
 }
 resource "aws_instance" "my-instance" {
