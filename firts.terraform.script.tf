@@ -63,7 +63,7 @@ output "demo" {
 value = "hellow sima"  
 }
 
-output "publice_ip" {
+output "public_ip" {
   value = "aws_instance.my-instance.public_ip"
   }
 
