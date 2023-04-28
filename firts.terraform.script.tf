@@ -9,12 +9,23 @@ terraform {
 provider "aws" {
     region = var.region
 }
+   data "aws_security_group" "my_sg" {
+    filter {
+      name = "vpc-id"
+      values = [ "vpc-029ae6ba0077aa2ef" ]
+    }
+    filter {
+      name = "group-name"
+      values = [ "default" ]
+    }
+     
+   }
 resource "aws_instance" "my-instance" {
     ami = var.ami_id
     instance_type = var.instance_type
     key_name = var.key_pair
     tags = var.tags
-    vpc_security_group_ids = var.sg_ids
+    vpc_security_group_ids = [data.aws_security_group.my_sg.id]
     }
      
       variable "region" {
@@ -41,9 +52,18 @@ resource "aws_instance" "my-instance" {
     }
 }
 
-variable "sg_ids" {
-    type = list
-    default = [
-        "sg-09de3c34c106ef45d"
-    ]
+#variable "sg_ids" {
+  #  type = list
+  #  default = [
+    #    "sg-09de3c34c106ef45d"
+   # ]
+#}
+
+output "demo" {
+value = "hellow sima"  
 }
+
+output "publice_ip" {
+  value = aws_instance.my-instance.public_ip
+  }
+
