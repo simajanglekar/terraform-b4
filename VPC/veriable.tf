@@ -6,7 +6,7 @@ variable "az1" {
 }
 
 variable "az2" {
-    default = "eu-west-2b"
+    default = ""
 }
 variable "terraform-backend"{
     default = "terraform-b4"
