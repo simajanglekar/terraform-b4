@@ -6,7 +6,7 @@ variable "az1" {
 }
 
 variable "az2" {
-    default = "ap-south-1"
+    default = "ap-south-1c"
 }
 variable "terraform-backend"{
     default = "terraform-b4"
