@@ -9,7 +9,7 @@ variable "az2" {
     default = "eu-west-2b"
 }
 variable "terraform-backend"{
-    default = "terraform-backend-b4"
+    default = "terraform-b4"
 }
 
 variable "vpc_cidr" {
