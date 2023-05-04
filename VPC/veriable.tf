@@ -6,11 +6,12 @@ variable "az1" {
 }
 
 variable "az2" {
-    default = "ap-south-1c"
+    default = "ap-south-1"
 }
 variable "terraform-backend"{
     default = "terraform-b4"
 }
+
 variable "vpc_cidr" {
     default = "10.10.0.0/16"
 }
