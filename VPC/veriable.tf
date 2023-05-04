@@ -1,5 +1,5 @@
 variable "region"{
-    default = ""
+    default = "ap-south-1a"
 }
 variable "az1" {
     default = ""
