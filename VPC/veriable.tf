@@ -11,7 +11,6 @@ variable "az2" {
 variable "terraform-backend"{
     default = "terraform-b4"
 }
-
 variable "vpc_cidr" {
     default = "10.10.0.0/16"
 }
