@@ -2,7 +2,7 @@ variable "region"{
     default = "ap-south-1a"
 }
 variable "az1" {
-    default = ""
+    default = "ap-south-1b"
 }
 
 variable "az2" {

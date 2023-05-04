@@ -1,0 +1,15 @@
+-------------------- Auto-Git Log --------------------
+Thu May 04 2023 01:53:57 GMT-0700 (Pacific Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* VPC/veriable.tf
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:
