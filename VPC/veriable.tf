@@ -33,7 +33,7 @@ variable "pub_sub_cidr" {
 }
 
 variable "image_id" {
-    default = "ami-036e229aa5fa198ba"
+    default = ""
 }
  variable "instance_type" {
     default = "t2.micro"
