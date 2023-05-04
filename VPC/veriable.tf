@@ -2,7 +2,7 @@ variable "region"{
     default = ""
 }
 variable "az1" {
-    default = "eu-west-2a"
+    default = ""
 }
 
 variable "az2" {
