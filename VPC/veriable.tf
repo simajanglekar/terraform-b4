@@ -40,6 +40,6 @@ variable "image_id" {
  }
 
 variable "key_pair" {
-    default = "aditya-london"
+    default = "sima"
 }
 
